@@ -21,4 +21,45 @@ This intelligent chatbot agent offers the following capabilities:
 - **OpenAI Agent SDK** – Core agent capabilities  
 - **Langchain** – Orchestration and RAG integration  
 - **Gemini Image Text Extractor** – Extract text from images  
-- **OpenCV** – Image preprocessing and analysis
+- **OpenCV** – Image preprocessing and analysis  
+
+## ⚙️ Installation Guidelines
+
+1. **Clone this repository**  
+   ```bash
+   git clone <your-repo-url>
+   cd <repo-directory>
+   ```
+
+2. **Create and activate a virtual environment**  
+   ```bash
+   python -m venv venv
+   venv/Scripts/activate  # On Windows
+   # Or for Unix/macOS
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set up environment variables**  
+   Create a `.env` file in the root directory with the following content:
+
+   ```env
+   # Model Choice ('openai' or 'gemini')
+   MODEL_CHOICE="openai"
+
+   # Model Name ('gpt-4o-mini' or 'gemini-2.0-flash')
+   MODEL_NAME="gpt-4o-mini"
+
+   # Model Keys
+   OPENAI_API_KEY="Your Open AI API KEY"
+   GEMINI_API_KEY="Your Google Gemini API KEY"
+   ```
+
+5. **Run the project**
+   ```bash
+   python main.py
+   ```
