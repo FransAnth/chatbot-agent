@@ -58,8 +58,8 @@ This intelligent chatbot agent offers the following capabilities:
    MODEL_NAME="gpt-4o-mini"
 
    # Model Keys
-   OPENAI_API_KEY="Your Open AI API KEY"
-   GEMINI_API_KEY="Your Google Gemini API KEY"
+   OPENAI_API_KEY="Your Open AI API KEY [REQUIRED]"
+   GEMINI_API_KEY="Your Google Gemini API KEY [REQUIRED]"
    ```
 
 6. **Run the project**
