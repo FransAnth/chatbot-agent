@@ -27,7 +27,7 @@ This intelligent chatbot agent offers the following capabilities:
 
 1. **Clone this repository**  
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/FransAnth/chatbot-agent.git
    cd <repo-directory>
    ```
 
@@ -35,6 +35,7 @@ This intelligent chatbot agent offers the following capabilities:
    ```bash
    python -m venv venv
    venv/Scripts/activate  # On Windows
+
    # Or for Unix/macOS
    source venv/bin/activate
    ```
