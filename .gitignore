@@ -12,3 +12,4 @@ env/
 
 # Ignore encrypted files
 *.enc
+.env
