@@ -32,20 +32,22 @@ This intelligent chatbot agent offers the following capabilities:
    ```
 
 2. **Create and activate a virtual environment**  
+   On Windows
    ```bash
    python -m venv venv
-   venv/Scripts/activate  # On Windows
-
-   # Or for Unix/macOS
+   venv/Scripts/activate
+   ```
+   On Unix/macOS
+   ```bash
    source venv/bin/activate
    ```
 
-3. **Install dependencies**  
+4. **Install dependencies**  
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables**  
+5. **Set up environment variables**  
    Create a `.env` file in the root directory with the following content:
 
    ```env
@@ -56,11 +58,11 @@ This intelligent chatbot agent offers the following capabilities:
    MODEL_NAME="gpt-4o-mini"
 
    # Model Keys
-   OPENAI_API_KEY="Your Open AI API KEY"
-   GEMINI_API_KEY="Your Google Gemini API KEY"
+   OPENAI_API_KEY="Your Open AI API KEY [REQUIRED]"
+   GEMINI_API_KEY="Your Google Gemini API KEY [REQUIRED]"
    ```
 
-5. **Run the project**
+6. **Run the project**
    ```bash
    python main.py
    ```
