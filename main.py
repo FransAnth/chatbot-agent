@@ -15,7 +15,7 @@ UPLOAD_FOLDER = "attachments/"
 @app.route("/query-agent/", methods=["POST"])
 @cross_origin(supports_credentials=True)
 def query_agent():
-    messages = json.loads(request.form.get("messages")) 
+    messages = json.loads(request.form.get("messages"))
     attachment = request.files.get("attachment")
 
     if attachment:
@@ -24,17 +24,22 @@ def query_agent():
     else:
         filepath = None
 
-    prompt = construct_prompt(messages)
+    history_count_limit = 10
+    prompt = construct_prompt(messages[history_count_limit * -1 :])
 
     chatbot = ChatbotAgent(image_path=filepath)
     response = chatbot.invoke(prompt)
 
     return jsonify(response)
 
-def construct_prompt(messages): 
-    conversation = [f"{message.get('role')}: {message.get('content')}" for message in messages]
-    
+
+def construct_prompt(messages):
+    conversation = [
+        f"{message.get('role')}: {message.get('content')}" for message in messages
+    ]
+
     return "\n".join(conversation)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
