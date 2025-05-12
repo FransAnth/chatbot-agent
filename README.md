@@ -35,7 +35,9 @@ This intelligent chatbot agent offers the following capabilities:
    ```bash
    python -m venv venv
    venv/Scripts/activate  # On Windows
+   ```
 
+   ```bash
    # Or for Unix/macOS
    source venv/bin/activate
    ```
