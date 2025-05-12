@@ -18,8 +18,6 @@ load_dotenv()
 model_name = os.getenv("MODEL_NAME", "gpt-4o-mini")
 model_choice = os.getenv("MODEL_CHOICE", "openai")
 
-print("MODEL CHOICE")
-print(model_choice)
 if model_choice == "openai":
     model = model_name
 else:
