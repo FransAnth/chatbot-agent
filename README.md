@@ -32,22 +32,22 @@ This intelligent chatbot agent offers the following capabilities:
    ```
 
 2. **Create and activate a virtual environment**  
+   On Windows
    ```bash
    python -m venv venv
-   venv/Scripts/activate  # On Windows
+   venv/Scripts/activate
    ```
-
+   On Unix/macOS
    ```bash
-   # Or for Unix/macOS
    source venv/bin/activate
    ```
 
-3. **Install dependencies**  
+4. **Install dependencies**  
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables**  
+5. **Set up environment variables**  
    Create a `.env` file in the root directory with the following content:
 
    ```env
@@ -62,7 +62,7 @@ This intelligent chatbot agent offers the following capabilities:
    GEMINI_API_KEY="Your Google Gemini API KEY"
    ```
 
-5. **Run the project**
+6. **Run the project**
    ```bash
    python main.py
    ```
